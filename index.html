@@ -3,103 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seann's Portofolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+    <title>Seann Bryan Timotius - Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-    <!--Header Section-->
-    <section class="header-top-fixed">
-        <div class="container">
-            <div class="logo">
-                <img src="" alt="Seann's logo">
-            </div>
-            <ul class="main-menu">
-                <li>
-                    <a href="#home">home</a>
-                </li>
-                <li>
-                    <a href="#projects">projects</a>
-                </li>
-                <li>
-                    <a href="#about">about me</a>
-                </li>
-                <li>
-                    <a href="#contact">contact</a>
-                </li>
-            </ul>
+
+    <!--Background-->
+    <div class="bg-animation">
+        <div class="bg-orb orb-1"></div>
+        <div class="bg-orb orb-2"></div>
+        <div class="bg-orb orb-3"></div>
+        <div class="bg-orb orb-4"></div>
+    </div>
+
+    <div class="grid-bg"></div>
+    <div class="scanlines"></div>
+
+    <!--Navigation-->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="brand-cyber">林</span><span class="brand-sec">樂安</span>
         </div>
+        <div class="nav-links">
+            <a href="#about">ABOUT ME</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu-->
+    <div class="mobile-menu">
+        <a href="#about">ABOUT ME</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
+    </div>
+
+    <!--Profile-->
+    <section id="about" class="profile-section">
         <div class="container">
-            <div class="row align-items-end">
-                <div class="intro-desc">
-                    <h1>I'm Seann.</h1>
-                    <h2>
-                        "I'm a " <span class="typed-element"></span>
-                    </h2>
+            <!--Credentials-->
+            <div class="credentials">
+                <div class="credential">
+                    <span class="cred-label">LEARNING -</span>
+                    <span class="cred-sublabel">ETHICAL HACKING</span>
                 </div>
-                <div class="intro_img">
-                    <img src="" alt="Portrait of Seann, a front-end Developer">
+                <div class="credential">
+                    <span class="cred-label">FOCUS -</span>
+                    <span class="cred-sublabel">NETWORK SECURITY</span>
+                </div>
+                <div class="credential">
+                    <span class="cred-label">STATUS -</span>
+                    <span class="cred-sublabel">STUDENT</span>
+                </div>
+            </div>
+
+            <!--Main Content-->
+            <div class="profile-content">
+                <div class="profile-text">
+                    <h1 class="profile-title">
+                        <span class="name-line">SEANN</span>
+                        <span class="name-line">BRYAN</span>
+                        <span class="name-line gradient-text">TIMOTIUS</span>
+                    </h1>
+                    <p class="profile-subtitle">Aspiring Cybersecurity Professional</p>
+                </div>
+
+                <!--Profile Photo-->
+                <div class="profile-photo">
+                    <div class="photo-container">
+                        <img src="https://via.placeholder.com/300x300/333/fff?text=Your+Photo" alt="Seann Bryan Timotius">
+                    </div>
+                    <div class="photo-accent accent-1"></div>
+                    <div class="photo-accent accent-2"></div>
+                    <div class="photo-accent accent-3"></div>
+                </div>
+            </div>
+
+            <!--About-->
+            <div class="about-section">
+                <h2 class="section-title">ABOUT</h2>
+                <p class="about-text">
+                    AN ENTHUSIASTIC BEGINNER IN THE CYBERSECURITY FIELD, PASSIONATE ABOUT LEARNING AND UNDERSTANDING THE
+                    COMPLEXITIES OF DIGITAL SECURITY. CURRENTLY BUILDING FOUNDATIONAL KNOWLEDGE IN NETWORK SECURITY, ETHICAL
+                    HACKING, AND THREAT ANALYSIS.
+                </p>
+                <p class="about-text">
+                    DEDICATED TO DEVELOPING PRACTICAL SKILLS THROUGH HANDS-ON LEARNING, ONLINE COURSES, AND PERSONAL PROJECTS.
+                    EAGER TO CONTRIBUTE TO THE CYBERSECURITY COMMUNITY AND PROTECT DIGITAL INFRASTRUCTURES FROM EMERGING
+                    THREATS.
+                </p>
+
+                <div class="skills-badges">
+                    <div class="skill-badge">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>STUDYING TRYHACKME</span>
+                    </div>
+                    <div class="skill-badge">
+                        <i class="fas fa-lock"></i>
+                        <span>LEARNING SECURITY+</span>
+                    </div>
+                    <div class="skill-badge">
+                        <i class="fas fa-bolt"></i>
+                        <span>PRACTICING CTFs</span>
+                    </div>
+                </div>
+
+                <button class="cta-button">VIEW LEARNING JOURNEY</button>
+            </div>
+        </div>
+    </section>
+
+    <!--Projects-->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title-large gradient-text">PROJECTS</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-status completed">COMPLETED</span>
+                    </div>
+                    <h3 class="project-title">Network Security Lab</h3>
+                    <p class="project-description">Simulated penetration testing using Nmap and Wireshark to identify open ports, detect vulnerabilities, and analyze traffic patterns.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Nmap</span>
+                        <span class="tech-tag">Wireshark</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-status learning">COMPLETED</span>
+                    </div>
+                    <h3 class="project-title">Linux Hardening Practice</h3>
+                    <p class="project-description">Configured firewall rules, managed permissions, and conducted basic log analysis for system monitoring.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Linux</span>
+                        <span class="tech-tag">Nmap</span>
+                        <span class="tech-tag">Networking</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-status ongoing">TBA</span>
+                        <!-- <i class="fas fa-external-link-alt"></i> -->
+                    </div>
+                    <h3 class="project-title">UNDER CONSTRUCTION</h3>
+                    <p class="project-description">-</p>
+                    <!-- <div class="project-tech">
+                        <span class="tech-tag"></span>
+                    </div> -->
+                    <!-- <button class="project-button">VIEW PROJECT</button> -->
                 </div>
             </div>
         </div>
     </section>
 
-    <!--Projects Section-->
-    <section class="project-sec" id="projects">
+    <!--Contact-->
+    <section id="contact" class="contact-section">
         <div class="container">
-            <div class="section-heading">
-                
+            <h2 class="section-title-large gradient-text">CONNECT</h2>
+            <p class="contact-subtitle">Let's discuss cybersecurity, collaborate on projects, or just connect</p>
+            
+            <div class="social-grid">
+                <a href="https://www.linkedin.com/in/seann-bryan-timotius/" class="social-card">
+                    <i class="fab fa-linkedin"></i>
+                    <div class="social-name">LinkedIn</div>
+                    <div class="social-handle">@Seann Bryan Timotius</div>
+                </a>
+                <a href="https://www.instagram.com/seann.bryan/" class="social-card">
+                    <i class="fab fa-instagram"></i>
+                    <div class="social-name">Instagram</div>
+                    <div class="social-handle">@seann.bryan</div>
+                </a>
+                <a href="https://line.me/ti/p/ydSUaLmYTu" class="social-card">
+                    <i class="fab fa-line"></i>
+                    <div class="social-name">Line</div>
+                    <div class="social-handle">@seanbryan</div>
+                </a>
+                <a href="https://github.com/412855149/" class="social-card">
+                    <i class="fab fa-github"></i>
+                    <div class="social-name">GitHub</div>
+                    <div class="social-handle">@Seann Bryan Timotius</div>
+                </a>
             </div>
-            <div class="projects-list">
-                <!--Project 1-->
-                <div class="food_recipe">
-                    <div class="food_recipe_desc">
-                        <h3>Food Recipe</h3>
-                        <p>This project was a part of my journey to exploring the world of coding, The first stop, Web Development!</p>
-                        <div class="project_button">
-                            <a href="html/food_recipe.html">
-                                <span>View Project &rarr;</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
 
-                <!--Project 2-->
-                <div class="tbc">
-                    <div class="tbc_desc">
-                        <h3>Under Construct</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sit, odit iusto mollitia deleniti voluptatem assumenda veritatis? Nobis nihil fugit ex totam, commodi dolorem, alias dolor autem sapiente vitae quibusdam.</p>
-                        <div class="project_button">
-                            <a href="">
-                                <span>View Project &rarr;</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <button class="cta-button large">GET IN TOUCH</button>
         </div>
     </section>
 
-    <!--About me Section-->
-    <section class="about-sec" id="about">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <div class="row justify-content-between flex-row-reverse">
-                <div class="about-pic">
-
-                </div>
-                <div class="about-desc">
-                    <h6>about - Seann Bryan Timotius</h6>
-                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae ab nam quibusdam, consectetur quas illum temporibus incidunt autem minus nostrum saepe numquam et eaque sunt sint quasi odit non voluptatum?</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex dicta, deserunt blanditiis accusamus reprehenderit voluptatem delectus in ut maxime quis natus esse similique? Qui explicabo sint laudantium fuga architecto velit?</p>
-                    <div class="socials">
-                        <a href="instagram"></a>
-                        <a href="linkedin"></a>
-                        <a href="line"></a>
-                    </div>
-                </div>
+            <div class="footer-content">
+                <div class="footer-text">©Seann Bryan Timotius</div>
+                <div class="footer-tech">Built with HTML, CSS & JavaScript</div>
             </div>
         </div>
-    </section>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
