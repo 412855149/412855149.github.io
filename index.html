@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seann Bryan Timotius - Cybersecurity Portfolio</title>
+    <meta name="description" content="Seann Bryan Timotius — aspiring cybersecurity professional. Network security, ethical hacking, and CTF practice.">
+    <title>Seann Bryan Timotius - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
 <body>
 
@@ -13,65 +18,60 @@
     <div class="bg-animation">
         <div class="bg-orb orb-1"></div>
         <div class="bg-orb orb-2"></div>
-        <div class="bg-orb orb-3"></div>
-        <div class="bg-orb orb-4"></div>
     </div>
-
-    <div class="grid-bg"></div>
-    <div class="scanlines"></div>
 
     <!--Navigation-->
     <nav class="navbar">
-        <div class="nav-brand">
-            <span class="brand-cyber">林</span><span class="brand-sec">樂安</span>
-        </div>
+        <a href="#about" class="nav-brand" aria-label="Back to top">
+            <span class="prompt-symbol">$</span> 林樂安<span class="cursor">_</span>
+        </a>
         <div class="nav-links">
-            <a href="#about">ABOUT ME</a>
-            <a href="#projects">PROJECTS</a>
-            <a href="#contact">CONTACT</a>
+            <a href="#about" class="nav-link active" data-section="about">About</a>
+            <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+            <a href="#contact" class="nav-link" data-section="contact">Contact</a>
         </div>
-        <button class="mobile-menu-btn">
+        <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
             <i class="fas fa-bars"></i>
         </button>
     </nav>
 
     <!-- Mobile Menu-->
+    <div class="mobile-menu-overlay"></div>
     <div class="mobile-menu">
-        <a href="#about">ABOUT ME</a>
-        <a href="#projects">PROJECTS</a>
-        <a href="#contact">CONTACT</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </div>
 
     <!--Profile-->
-    <section id="about" class="profile-section">
+<section id="about" class="profile-section">
         <div class="container">
             <!--Credentials-->
             <div class="credentials">
                 <div class="credential">
-                    <span class="cred-label">LEARNING -</span>
-                    <span class="cred-sublabel">ETHICAL HACKING</span>
+                    <span class="cred-label">Learning</span>
+                    <span class="cred-sublabel">Ethical Hacking</span>
                 </div>
                 <div class="credential">
-                    <span class="cred-label">FOCUS -</span>
-                    <span class="cred-sublabel">NETWORK SECURITY</span>
+                    <span class="cred-label">Focus</span>
+                    <span class="cred-sublabel">Network Security</span>
                 </div>
                 <div class="credential">
-                    <span class="cred-label">STATUS -</span>
-                    <span class="cred-sublabel">STUDENT</span>
+                    <span class="cred-label">Status</span>
+                    <span class="cred-sublabel">Student</span>
                 </div>
             </div>
-
+ 
             <!--Main Content-->
             <div class="profile-content">
                 <div class="profile-text">
                     <h1 class="profile-title">
-                        <span class="name-line">SEANN</span>
-                        <span class="name-line">BRYAN</span>
-                        <span class="name-line gradient-text">TIMOTIUS</span>
+                        <span class="name-line">Seann Bryan</span>
+                        <span class="name-line gradient-text">Timotius</span>
                     </h1>
                     <p class="profile-subtitle">Aspiring Cybersecurity Professional</p>
                 </div>
-
+ 
                 <!--Profile Photo-->
                 <div class="profile-photo">
                     <div class="photo-container">
@@ -79,116 +79,180 @@
                     </div>
                     <div class="photo-accent accent-1"></div>
                     <div class="photo-accent accent-2"></div>
-                    <div class="photo-accent accent-3"></div>
                 </div>
             </div>
-
+ 
             <!--About-->
             <div class="about-section">
-                <h2 class="section-title">ABOUT</h2>
+                <h2 class="section-title">About</h2>
                 <p class="about-text">
-                    AN ENTHUSIASTIC BEGINNER IN THE CYBERSECURITY FIELD, PASSIONATE ABOUT LEARNING AND UNDERSTANDING THE
-                    COMPLEXITIES OF DIGITAL SECURITY. CURRENTLY BUILDING FOUNDATIONAL KNOWLEDGE IN NETWORK SECURITY, ETHICAL
-                    HACKING, AND THREAT ANALYSIS.
+                    An enthusiastic beginner in the cybersecurity field, passionate about learning and understanding the
+                    complexities of digital security. Currently building foundational knowledge in network security, ethical
+                    hacking, and threat analysis.
                 </p>
                 <p class="about-text">
-                    DEDICATED TO DEVELOPING PRACTICAL SKILLS THROUGH HANDS-ON LEARNING, ONLINE COURSES, AND PERSONAL PROJECTS.
-                    EAGER TO CONTRIBUTE TO THE CYBERSECURITY COMMUNITY AND PROTECT DIGITAL INFRASTRUCTURES FROM EMERGING
-                    THREATS.
+                    Dedicated to developing practical skills through hands-on learning, online courses, and personal projects.
+                    Eager to contribute to the cybersecurity community and protect digital infrastructures from emerging
+                    threats.
                 </p>
-
+ 
                 <div class="skills-badges">
                     <div class="skill-badge">
                         <i class="fas fa-shield-alt"></i>
-                        <span>STUDYING TRYHACKME</span>
+                        <span>Studying HackTheBox</span>
                     </div>
                     <div class="skill-badge">
                         <i class="fas fa-lock"></i>
-                        <span>LEARNING SECURITY+</span>
+                        <span>Learning Security+</span>
                     </div>
                     <div class="skill-badge">
                         <i class="fas fa-bolt"></i>
-                        <span>PRACTICING CTFs</span>
+                        <span>Practicing CTFs</span>
                     </div>
                 </div>
-
-                <button class="cta-button">VIEW LEARNING JOURNEY</button>
+ 
+                <button class="cta-button" data-scroll-to="#projects">View Projects</button>
             </div>
         </div>
     </section>
-
+ 
     <!--Projects-->
     <section id="projects" class="projects-section">
         <div class="container">
-            <h2 class="section-title-large gradient-text">PROJECTS</h2>
-            
+            <h2 class="section-title-large gradient-text">Projects</h2>
+ 
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-header">
-                        <span class="project-status completed">COMPLETED</span>
+                        <span class="project-status completed">Completed</span>
                     </div>
-                    <h3 class="project-title">Network Security Lab</h3>
-                    <p class="project-description">Simulated penetration testing using Nmap and Wireshark to identify open ports, detect vulnerabilities, and analyze traffic patterns.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Nmap</span>
-                        <span class="tech-tag">Wireshark</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-status learning">COMPLETED</span>
-                    </div>
-                    <h3 class="project-title">Linux Hardening Practice</h3>
-                    <p class="project-description">Configured firewall rules, managed permissions, and conducted basic log analysis for system monitoring.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Linux</span>
-                        <span class="tech-tag">Nmap</span>
-                        <span class="tech-tag">Networking</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-status ongoing">COMPLETED</span>
-                        <i class="fas fa-external-link-alt"></i>
-                    </div>
-                    <h3 class="project-title">FOOD WEBSITE</h3>
+                    <h3 class="project-title">Food Website</h3>
                     <p class="project-description">Personal class project to get to know web development through designing a food website.</p>
                     <div class="project-tech">
                         <span class="tech-tag">HTML</span>
                         <span class="tech-tag">CSS</span>
-                        <span class="tech-tag">JAVASCRIPT</span>
+                        <span class="tech-tag">JavaScript</span>
                     </div>
-                    <button class="project-button" onclick="window.location.href='html/food_recipe.html'">VIEW PROJECT</button>
+                    <button class="project-button" onclick="window.location.href='food_recipe/food_recipe.html'">View Project</button>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-status completed">Completed</span>
+                    </div>
+                    <h3 class="project-title">Inventory Management System Website</h3>
+                    <p class="project-description">Developed a web-based inventory management system for tracking organizational assets and resources.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MariaDB</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-status completed">Completed</span>
+                    </div>
+                    <h3 class="project-title">Point-Of-Sale Website</h3>
+                    <p class="project-description">Built a web-based POS system for inventory and transaction management in retail environments.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MariaDB</span>
+                    </div>
+                    <button class="project-button" onclick="window.location.href='POS/cashier-network-based-main/src/views/Cashier/cashier.html'">View Project</button>
+                </div>
+ 
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-status completed">Completed</span>
+                    </div>
+                    <h3 class="project-title">Privilege Escalation Exercise</h3>
+                    <p class="project-description">Practiced Linux privilege escalation by exploiting sudo misconfigurations and exposed SSH keys to gain root access.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Linux</span>
+                        <span class="tech-tag">SSH</span>
+                        <span class="tech-tag">Sudo Misconfiguration</span>
+                        <span class="tech-tag">Privilege Escalation</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-status completed">Completed</span>
+                    </div>
+                    <h3 class="project-title">Public Exploits Exercise</h3>
+                    <p class="project-description">Exploited vulnerable WordPress services using public exploits to retrieve sensitive system files.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">WordPress</span>
+                        <span class="tech-tag">MetaSploit Framework</span>
+                        <span class="tech-tag">Vulnerability Assessment</span>
+                        <span class="tech-tag">Web Exploitation</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-status completed">Completed</span>
+                    </div>
+                    <h3 class="project-title">Grey-Box Penetration Testing Exercise</h3>
+                    <p class="project-description">Performed enumeration and exploitation of a vulnerable Nibbleblog application to gain root access.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Nmap</span>
+                        <span class="tech-tag">Gobuster</span>
+                        <span class="tech-tag">Nibbleblog</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">Reverse Shell</span>
+                        <span class="tech-tag">Linux Privilege Escalation</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-status completed">Completed</span>
+                    </div>
+                    <h3 class="project-title">Black-Box Penetration Testing Practice</h3>
+                    <p class="project-description">Exploited a vulnerable GetSimple CMS website through PHP command injection and sudo misconfiguration.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Nmap</span>
+                        <span class="tech-tag">Gobuster</span>
+                        <span class="tech-tag">GetSimple CMS</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">Reverse Shell</span>
+                        <span class="tech-tag">Linux Privilege Escalation</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
+ 
     <!--Contact-->
     <section id="contact" class="contact-section">
         <div class="container">
-            <h2 class="section-title-large gradient-text">CONNECT</h2>
+            <h2 class="section-title-large gradient-text">Connect</h2>
             <p class="contact-subtitle">Let's discuss cybersecurity, collaborate on projects, or just connect</p>
-            
+ 
             <div class="social-grid">
-                <a href="https://www.linkedin.com/in/seann-bryan-timotius/" class="social-card">
+                <a href="https://www.linkedin.com/in/seann-bryan-timotius/" class="social-card" target="_blank">
                     <i class="fab fa-linkedin"></i>
                     <div class="social-name">LinkedIn</div>
                     <div class="social-handle">@Seann Bryan Timotius</div>
                 </a>
-                <a href="https://www.instagram.com/seann.bryan/" class="social-card">
+                <a href="https://www.instagram.com/seann.bryan/" class="social-card" target="_blank">
                     <i class="fab fa-instagram"></i>
                     <div class="social-name">Instagram</div>
                     <div class="social-handle">@seann.bryan</div>
                 </a>
-                <a href="https://line.me/ti/p/ydSUaLmYTu" class="social-card">
+                <a href="https://line.me/ti/p/ydSUaLmYTu" class="social-card" target="_blank">
                     <i class="fab fa-line"></i>
                     <div class="social-name">Line</div>
                     <div class="social-handle">@seanbryan</div>
                 </a>
-                <a href="https://github.com/412855149/" class="social-card">
+                <a href="https://github.com/412855149/" class="social-card" target="_blank">
                     <i class="fab fa-github"></i>
                     <div class="social-name">GitHub</div>
                     <div class="social-handle">@Seann Bryan Timotius</div>
@@ -196,17 +260,17 @@
             </div>
         </div>
     </section>
-
+ 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-text">©Seann Bryan Timotius</div>
-                <div class="footer-tech">Built with HTML, CSS & JavaScript</div>
+                <div class="footer-text">© Seann Bryan Timotius</div>
+                <div class="footer-tech">Built with HTML, CSS &amp; JavaScript</div>
             </div>
         </div>
     </footer>
-
+ 
     <script src="script.js"></script>
 </body>
 </html>
